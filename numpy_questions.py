@@ -37,9 +37,6 @@ def max_index(X):
         If the input is not a numpy array or
         if the shape is not 2D.
     """
-    i = 0
-    j = 0
-
     if not isinstance(X, np.ndarray):
         raise ValueError("The input must be a numpy array.")
 
@@ -81,6 +78,7 @@ def wallis_product(n_terms):
     # We use 4.0 to ensure floating point division.
     numerator = 4.0 * n ** 2
     denominator = numerator - 1
+
     terms = numerator / denominator
 
     # The Wallis product calculates pi/2, so we multiply the result by 2.
