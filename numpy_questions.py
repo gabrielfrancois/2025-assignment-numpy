@@ -81,7 +81,6 @@ def wallis_product(n_terms):
     # We use 4.0 to ensure floating point division.
     numerator = 4.0 * n ** 2
     denominator = numerator - 1
-    
     terms = numerator / denominator
 
     # The Wallis product calculates pi/2, so we multiply the result by 2.
